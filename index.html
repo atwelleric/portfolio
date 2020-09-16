@@ -11,7 +11,32 @@
 			<header>
 				<nav>
 					<h3 class="logo">Eric Atwell</h3>
-					<h4>Menu</h4>
+					<svg
+						class="menu"
+						width="43"
+						height="23"
+						viewBox="0 0 43 23"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<line y1="1.5" x2="43" y2="1.5" stroke="white" stroke-width="3" />
+						<line y1="11.5" x2="28" y2="11.5" stroke="white" stroke-width="3" />
+						<line y1="21.5" x2="16" y2="21.5" stroke="white" stroke-width="3" />
+					</svg>
+					<div class="nav-open">
+						<div class="contact">
+							<h3>Contact</h3>
+							<p>atwellcodes@gmail.com</p>
+						</div>
+						<div class="social">
+							<h3>Social</h3>
+							<div class="social-links">
+								<img src="./mainimgs/linkedin.svg" alt="linkedin Logo" />
+								<img src="./mainimgs/Octocat 1.svg" alt="github Logo" />
+								<img src="./mainimgs/twitter.svg" alt="twitter Logo" />
+							</div>
+						</div>
+					</div>
 				</nav>
 				<main>
 					<section class="page me">
@@ -20,16 +45,18 @@
 							<h2>Full Stack Developer</h2>
 						</div>
 						<div class="hero">
-							<img
-								class="me-left"
-								src="./mainimgs/Me Left.png"
-								alt="image of Eric Atwell"
-							/>
-							<img
-								class="me-right"
-								src="./mainimgs/Me Right.png"
-								alt="image of Eric Atwell"
-							/>
+							<a href="about.html">
+								<img
+									class="image-left"
+									src="./mainimgs/Me Left.png"
+									alt="image of Eric Atwell"
+								/>
+								<img
+									class="image-right"
+									src="./mainimgs/Me Right.png"
+									alt="image of Eric Atwell"
+								/>
+							</a>
 						</div>
 					</section>
 					<section class="page hangman">
@@ -38,16 +65,18 @@
 							<h2>HTML | CSS | JS</h2>
 						</div>
 						<div class="hero">
-							<img
-								class="hang-left"
-								src="./mainimgs/hangman-left 1.png"
-								alt="image of Hangman Game"
-							/>
-							<img
-								class="hang-right"
-								src="./mainimgs/hangman-right 1.png"
-								alt="image of Hangman Game"
-							/>
+							<a href="hangman.html">
+								<img
+									class="image-left"
+									src="./mainimgs/hangman-left 1.png"
+									alt="image of Hangman Game"
+								/>
+								<img
+									class="image-right"
+									src="./mainimgs/hangman-right 1.png"
+									alt="image of Hangman Game"
+								/>
+							</a>
 						</div>
 					</section>
 					<section class="page kidsday">
@@ -57,16 +86,18 @@
 							<h2>REACT</h2>
 						</div>
 						<div class="hero">
-							<img
-								class="kids-left"
-								src="./mainimgs/kidsday-left 1.png"
-								alt="image of Kids Day App"
-							/>
-							<img
-								class="kids-right"
-								src="./mainimgs/kidsday-right 1.png"
-								alt="image of Kids Day App"
-							/>
+							<a href="kidsday.html">
+								<img
+									class="image-left"
+									src="./mainimgs/kidsday-left 1.png"
+									alt="image of Kids Day App"
+								/>
+								<img
+									class="image-right"
+									src="./mainimgs/kidsday-right 1.png"
+									alt="image of Kids Day App"
+								/>
+							</a>
 						</div>
 					</section>
 					<section class="page codeshare">
@@ -76,35 +107,39 @@
 							<h2>REACT | NODE JS | MongoDB</h2>
 						</div>
 						<div class="hero">
-							<img
-								class="code-left"
-								src="./mainimgs/codeshare-left 1.png"
-								alt="image of CodeShare App"
-							/>
-							<img
-								class="code-right"
-								src="./mainimgs/codeshare-right 1.png"
-								alt="image of CodeShare App"
-							/>
+							<a href="codeshare.html">
+								<img
+									class="image-left"
+									src="./mainimgs/codeshare-left 1.png"
+									alt="image of CodeShare App"
+								/>
+								<img
+									class="image-right"
+									src="./mainimgs/codeshare-right 1.png"
+									alt="image of CodeShare App"
+								/>
+							</a>
 						</div>
 					</section>
-					<section class="page Arcade">
+					<section class="page arcade">
 						<div class="details">
 							<h1>Arcade</h1>
 							<h2>HTML | CSS | JS | PYTHON</h2>
 							<h2>REACT | DJANGO | SQL | SASS</h2>
 						</div>
 						<div class="hero">
-							<img
-								class="arcade-left"
-								src="./mainimgs/arcade-left 1.png"
-								alt="image of Arcade App"
-							/>
-							<img
-								class="arcade-right"
-								src="./mainimgs/arcade-right 1.png"
-								alt="image of Arcade App"
-							/>
+							<a href="arcade.html">
+								<img
+									class="image-left"
+									src="./mainimgs/arcade-left 1.png"
+									alt="image of Arcade App"
+								/>
+								<img
+									class="image-right"
+									src="./mainimgs/arcade-right 1.png"
+									alt="image of Arcade App"
+								/>
+							</a>
 						</div>
 					</section>
 
@@ -182,5 +217,16 @@
 				</main>
 			</header>
 		</div>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+			integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+			integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+			crossorigin="anonymous"
+		></script>
+		<script src="scripts.js"></script>
 	</body>
 </html>
