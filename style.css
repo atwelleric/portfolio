@@ -172,11 +172,18 @@ nav {
 		font-size: 38px;
 	}
 	.details h2 {
-		font-size: 28px;
+		font-size: 20px;
+		padding-bottom: 10px;
+		padding-top: 5px;
 	}
 	.pages h3 {
-		font-size: 12px;
-		padding: 10px;
+		display: none;
+	}
+	.pages svg {
+		padding: 6px;
+	}
+	.social-h3 {
+		padding-right: 20px;
 	}
 }
 
