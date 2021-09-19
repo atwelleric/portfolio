@@ -91,6 +91,8 @@ function init() {
 		switchDots(scrollSlide);
 		nextSlide(scrollSlide);
 	}
+
+	// Hamburger menu
 	const hamburger = document.querySelector('.menu');
 	const hamburgerLines = document.querySelectorAll('.menu line');
 	const navOpen = document.querySelector('.nav-open');
@@ -114,6 +116,32 @@ function init() {
 
 	hamburger.addEventListener('click', () => {
 		tl.reversed() ? tl.play() : tl.reverse();
+	});
+
+	const menuLinks = document.querySelector('.menu-links');
+	const hamburgerLinksLines = document.querySelectorAll('.menu-links line');
+	const iconSection = document.querySelector('.icon-section');
+	const icon = document.querySelectorAll('.icon');
+	// const social = document.querySelector('.social');
+	// const logo = document.querySelector('.logo');
+
+	const tlTwo = new TimelineMax({ paused: true, reversed: true });
+
+	tlTwo
+		.to(iconSection, 0.5, { x: 0 })
+		.fromTo(icon, 0.5, { opacity: 0, y: 10 }, { opacity: 1, y: 0 }, '-=0.1')
+		// .fromTo(social, 0.5, { opacity: 0, y: 10 }, { opacity: 1, y: 0 }, '-=0.5')
+		// .fromTo(logo, 0.2, { color: 'white' }, { color: 'black' }, '-=1')
+		.fromTo(
+			hamburgerLinksLines,
+			0.2,
+			{ stroke: 'gray' },
+			{ stroke: 'gray' },
+			'-=.5'
+		);
+
+	menuLinks.addEventListener('click', () => {
+		tlTwo.reversed() ? tlTwo.play() : tlTwo.reverse();
 	});
 }
 
