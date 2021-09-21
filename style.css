@@ -238,7 +238,14 @@ nav {
 		transform: scale(2);
 	}
 }
-
+@media (max-width: 1600px) {
+	.subtitle{
+		font-size: 1em;
+	}
+	.subtitle li {
+	margin: 1rem;
+}
+}
 @media (max-width: 1024px) {
 	.page {
 		grid-template-columns: 5% 1fr 5%;
