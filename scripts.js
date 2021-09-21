@@ -60,6 +60,28 @@ function init() {
 		console.log('check');
 	});
 
+	// Avtc Links
+
+	const hamburgerAvtcLinksLines = document.querySelectorAll(
+		'.avtc-menu-links line'
+	);
+	const avtcMenuLinks = document.querySelector('.avtc-menu-links');
+	const tlAvtc = new TimelineMax({ paused: true, reversed: true });
+	tlAvtc
+		.to(iconSection, 0.5, { x: 0 })
+		.fromTo(icon, 0.5, { opacity: 0, y: 10 }, { opacity: 1, y: 0 }, '-=0.1')
+		.fromTo(
+			hamburgerAvtcLinksLines,
+			0.2,
+			{ stroke: 'gray' },
+			{ stroke: 'gray' },
+			'-=.5'
+		);
+	avtcMenuLinks.addEventListener('click', () => {
+		tlAvtc.reversed() ? tlAvtc.play() : tlAvtc.reverse();
+		console.log('check');
+	});
+
 	// Hangman Links
 
 	const hamburgerHangLinksLines = document.querySelectorAll(
@@ -218,11 +240,11 @@ function init() {
 			scrollSlide -= 1;
 		}
 
-		if (scrollSlide > 4) {
+		if (scrollSlide > 5) {
 			scrollSlide = 0;
 		}
 		if (scrollSlide < 0) {
-			scrollSlide = 4;
+			scrollSlide = 5;
 		}
 		switchDots(scrollSlide);
 		nextSlide(scrollSlide);

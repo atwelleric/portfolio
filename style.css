@@ -50,7 +50,7 @@ nav {
 	background-color: rgba(20, 20, 20, 0.4);
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1%;
+	grid-template-columns: 1fr 1fr 1fr 1%;
 	grid-row: 1/3;
 	grid-column: 1;
 	height: 60vmin;
@@ -71,13 +71,13 @@ nav {
 	flex-direction: column;
 	justify-content: space-between;
 	margin-top: 2vmin;
-	margin-right: 1vmin;
+	/* margin-right: 1vmin; */
 	align-items: center;
 	padding: 2vmin;
 	width: 100px;
 	height: 100px;
 	background-color: #202027;
-	margin-left: 2vmin;
+	margin-left: 5vmin;
 	border-radius: 10px;
 }
 
@@ -112,7 +112,8 @@ nav {
 .hangman,
 .kidsday,
 .codeshare,
-.arcade {
+.arcade,
+.avtc {
 	position: absolute;
 	bottom: 0%;
 	left: 0%;
@@ -259,9 +260,20 @@ nav {
 	.details h2 {
 		font-size: 30px;
 	}
+	.icon-section {
+		height: 70vmin;
+		width: 50vmin;
+		transform: translateX(-90%);
+	}
+	.subtitle{
+		font-size: 1.3em;
+	}
+	.subtitle li {
+	margin: 1rem;
+}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 813px) {
 	.hero img {
 		height: 300px;
 	}
@@ -282,6 +294,31 @@ nav {
 	.social-h3 {
 		padding-right: 20px;
 	}
+	.icon-section {
+		height: 150vmin;
+		width: 80vmin;
+		transform: translateX(-90%);
+	}
+	.subtitle{
+		font-size: 1em;
+		padding-left: 1rem;
+		padding-right: 0;
+		margin: 0;
+	}
+	.subtitle li {
+	margin: 1rem;
+}
+.icon {
+	padding: 1vmin;
+	width: 70px;
+	height: 70px;
+	margin-left: 4vmin;
+	font-size: 10px;
+	margin-bottom: 0;
+}
+.icon img {
+	width: 35px;
+}
 }
 
 .nav-open {
@@ -331,7 +368,8 @@ nav {
 .hang-menu-links,
 .kids-menu-links,
 .share-menu-links,
-.arcade-menu-links {
+.arcade-menu-links,
+.avtc-menu-links {
 	/* z-index: 2; */
 	display: flex;
 	grid-column: 5;
