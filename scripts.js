@@ -3,6 +3,7 @@ function init() {
 	const pages = document.querySelectorAll('.page');
 	const backgrounds = [
 		`radial-gradient(#586D37, #1D1D1D)`,
+		`radial-gradient(#6B6564, #1D1D1D)`,
 		`radial-gradient(#7D6C28, #0B1023)`,
 		`radial-gradient(#7E8DC9, #0B1023)`,
 		`radial-gradient(#89B0AE, #0B1023)`,
